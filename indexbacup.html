@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="toolbar">
+            <div class="tools" id="inputfile">
+                <input type="file" id="imagefile">
+
+            </div>
+            <div class="tools">
+                <label for="brightness">BRIGHTNESS</label>
+                <input type="range" id="brightness" min="0" max="200"> 
+            </div>
+            <div class="tools">
+                <label for="saturation">SATURATION</label>
+                <input type="range" id="saturation" min="0" max="200">
+            </div>
+            <div class="tools">
+                <label for="blur">BLUR</label>
+                <input type="range" id="blur" min="0" max="100">
+            </div>
+            <div class="tools">
+                <div class="x-crop">
+                    <label for="crop-x">CROP-X</label>
+                    <input type="range" id="crop-x" min="-500" max="500">
+                </div>
+                <div class="y-crop">
+                    <label for="crop-y">CROP-Y</label>
+                    <input type="range" id="crop-y" min="-500" max="500">
+                </div>
+            </div>
+            <div class="tools">
+                <label for="flip-right">FLIP</label>
+                <input type="range" id="flip-right" min="0" max="360">
+            </div>
+            <div class="tools">
+                <label for="flip-right">FLIP</label>
+                <input type="range" id="flip-right" min="0" max="360">
+            </div>
+
+
+            <div class="textdiv">
+                <input type="text" style="display: block;" id="name">
+
+
+                
+                <label for="position_text_x">MOVE X</label>
+                <input type="range" id="position_text_x" min="1" max="500">
+
+                <label for="position_text_y">MOVE Y</label>
+                <input type="range" id="position_text_y" min="1" max="500">
+
+
+
+                <label for="font" style="display: block;">FONT</label>
+                <input type="range" id="font" min="1" max="200" >
+
+
+
+                <label for="ffamily">SELECT FONT TYPE: </label>
+                <select id="ffamily">
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Lucida Console">Lucida Console</option>
+                    <option value="Tahoma">Tahoma</option>
+                    <option value="Trebuchet MS">Trebuchet MS</option>
+                </select>
+
+                <label for="color">COLOUR</label>
+                <input type="color" id="color">
+
+
+
+                <button onclick="text()" style="display: block;">bbbbbbbb</button>
+            </div>
+
+        </div>
+        <div class="img" style="margin-left: 100px;">
+            <canvas id="canvas" height="500" width="500" style="border: solid black 0px;"></canvas>
+        </div>
+    </main>
+    <script src="indexbackup.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+
+</body>
+</html>

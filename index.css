@@ -1,0 +1,437 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body
+{
+    background: #666666;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main
+{
+    background: #1b1b1b;
+    margin: 5%;
+    /* margin-top: 10%; */
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 1%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    
+}
+
+
+.buttons
+{
+    background: #414141;
+    width: 6.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: solid black 5px;
+    /* border-radius: 2.5% 2.5% 0; */
+    /* padding: 1%; */
+    /* justify-content: center; */
+}
+
+.btn1
+{
+    margin-top: 50%;
+    width: 100%;
+    height: 14%;
+    /* font-size: 1rem; */
+    /* border-radius: 500px;
+     */
+    /* margin: 5%; */
+
+    
+}
+.btn2
+{
+    margin-top: 50%;
+    width: 100%;
+    height: 14%;
+    
+}
+.btn3
+{
+    margin-top: 50%;
+    width: 100%;
+    height: 14%;
+}
+.btn4
+{
+    margin-top: 50%;
+    width: 100%;
+    height: 14%;
+}
+
+#b1
+{
+    color: #000000;
+    background: #414141;
+    width: 100%;
+    height: 100%; 
+    font-size: 120%;
+    border-radius: 50%;
+    border: transparent;
+    cursor: pointer;
+    /* padding: 50%; */
+
+
+
+}
+
+/* #b1 :hover
+{
+
+} */
+
+
+#b2
+{
+    color: #000000;
+    background: #414141;
+    width: 100%;
+    height: 100%;
+    font-size: 120%;
+    border-radius: 50%;
+    /* padding: 20%;
+    margin-right: %; */
+    border: transparent;
+    cursor: pointer;
+    
+}
+#b3
+{
+    color: #000000;
+    background: #414141;
+    width: 100%;
+    height: 100%;
+    font-size: 120%;
+    border-radius: 50%;
+    /* padding: 20%;
+    margin-right: %; */
+    border: transparent;
+    cursor: pointer;
+}
+#b4
+{
+    color: #000000;
+    background: #414141;
+    width: 100%;
+    height: 100%;
+    font-size: 120%;
+    border-radius: 50%;
+    /* padding: 20%;
+    margin-right: %; */
+    border: transparent;
+    cursor: pointer;
+}
+
+
+
+
+#toolbar1
+{
+    display: flex;
+    width: 25%;
+    /* visibility: hidden; */
+    background: #c79903;
+    /* width: 25%; */
+    border-radius: 0 2.5% 2.5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;
+    border-right: solid black 5px;
+}
+#inputfile
+{
+    
+    font-family:monospace;
+    display: none;
+    height: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #c79903;
+}
+#imagefile
+{
+    /* background: #251d1d; */
+    font-size: 100%;
+    font-family: monospace;
+    padding-left: 20%;
+    background: #c79903;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    color: transparent;
+    height: 50%;
+    
+    /* -moz-opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0) */
+}
+
+#imagefile::file-selector-button
+{
+    background: #8a8166;
+    /* color: #8b1e1e; */
+    border: transparent;
+    border-radius: 50rem;
+    width: 80%;
+    height: 50%;
+    font-family: monospace;
+}
+/* #imagefile::-webkit-file-upload-button {
+    visibility: hidden;
+  } */
+
+
+#downloadbutton
+{
+    font-family:monospace;
+    display: none;
+    height: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #c79903;
+}
+
+#resetbutton
+{
+    font-family:monospace;
+    display: none;
+    height: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #c79903;
+}
+
+#dbtn
+{
+    background: #8a8166;
+    /* color: #8b1e1e; */
+    border: transparent;
+    border-radius: 50rem;
+    width: 260%;
+    height: 25%;
+    font-family: monospace;
+}
+
+#resetit
+{
+    background: #8a8166;
+    /* color: #8b1e1e; */
+    border: transparent;
+    border-radius: 50rem;
+    width: 260%;
+    height: 25%;
+    font-family: monospace;
+    /* margin-left: 15px; */
+    cursor: pointer;
+}
+
+
+#toolbar
+{
+    /* width: 25%; */
+    display: none;
+    
+    /* visibility: hidden; */
+    background: #c79903;
+    /* border-radius: 0 2.5% 2.5% 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 20%; */
+    border-right: solid black 5px;
+}
+
+.tools
+{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    font-family: monospace;
+    margin-top: 5%;
+    font-size: 100%;
+    margin-left: 10%;
+
+
+}
+
+
+
+
+#textdiv
+{
+    display: none;
+    /* visibility: hidden; */
+    background: #c79903;
+    /* width: 25%; */
+    border-radius: 0 2.5% 2.5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;
+    border-right: solid black 5px;
+}
+
+
+
+
+/* #div1
+{
+    display: none;
+}
+
+#div2
+{
+    display: none;
+}
+#div3
+{
+    
+    display: none;
+}
+#div4
+{
+    
+    display: none;
+}
+#div5
+{
+    
+    display: none;
+}
+#div6
+{
+    
+    display: none;
+}
+#div7
+{
+    
+    display: none;
+} */
+
+
+.divi
+{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    font-family: monospace;
+    margin-top: 5%;
+    font-size: 100%;
+    margin-left: 10%;
+
+
+}
+
+
+
+#cropdiv
+{
+    display: none;
+    /* visibility: hidden; */
+    background: #c79903;
+    /* width: 25%; */
+    border-radius: 0 2.5% 2.5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;
+    border-right: solid black 5px;
+}
+
+
+.c
+{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    font-family: monospace;
+    margin-top: 5%;
+    font-size: 100%;
+    margin-left: 10%;
+}
+
+
+
+
+#btntext
+{
+    font-family: monospace;
+    width: 100%;
+    height: 120%;
+    background: #535353;
+    border: transparent;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+#img
+{
+    background: #414141;
+    width: 70%;
+    height: 100%;
+}
+
+#canvas
+{
+    width: 100%;
+    height: 100%;
+
+    /* border: solid black 0px; */
+
+}
+
+
+
+
+
+
+
+
+
+
+/* #resetbutton
+{
+
+    
+
+} */
+
+
+
+
+
+

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="buttons">
+        <div class="btn1">
+          <button id="b1" onclick="show1()">
+            <i class="fa fa-download"></i>
+          </button>
+        </div>
+        <div class="btn2">
+          <button id="b2" onclick="show2()">
+            <i class="fa fa-filter"></i>
+          </button>
+        </div>
+        <div class="btn3">
+          <button id="b3" onclick="show3()"><i class="fa fa-font"></i></button>
+        </div>
+        <div class="btn4">
+          <button id="b4" onclick="show4()"><i class="fa fa-crop"></i></button>
+        </div>
+      </div>
+
+      <div class="toolbar1" id="toolbar1">
+        <div class="tools1" id="inputfile">
+          <input type="file" id="imagefile" />
+        </div>
+        <div class="tools1" id="resetbutton">
+          <button id="resetit" onclick="reset()">
+            <i class="fa fa-download"
+              ><p style="display: inline"></p>
+              RESET</i
+            >
+          </button>
+        </div>
+        <div class="tools1" id="downloadbutton">
+          <button id="dbtn" onclick="reset()">
+            <i class="fa fa-download"
+              ><p style="display: inline"></p>
+              Download</i
+            >
+          </button>
+        </div>
+      </div>
+
+      <div class="toolbar" id="toolbar">
+        <div class="tools" id="tools1">
+          <p><i class="fa fa-sun-o"></i> BRIGHTNESS</p>
+          <label for="brightness"></label>
+          <input type="range" id="brightness" min="0" max="200" />
+        </div>
+        <div class="tools" id="tools2">
+          <p><i class="fa fa-paint-brush"></i> SATURATION</p>
+          <label for="saturation"></label>
+          <input type="range" id="saturation" min="0" max="200" />
+        </div>
+        <div class="tools" id="tools3">
+          <p><i class="fa fa-eye"></i> BLUR</p>
+          <label for="blur"></label>
+          <input type="range" id="blur" min="0" max="100" />
+        </div>
+
+        <div class="tools" id="tools4">
+          <p><i class="fa fa-adjust"></i> CONTRAST</p>
+          <label for="contrast"></label>
+          <input type="range" id="contrast" min="0" max="200" />
+        </div>
+        <div class="tools" id="tools5">
+          <p><i class="fa fa-tint"></i> GRAY-SCALE</p>
+          <label for="grayscale"></label>
+          <input type="range" id="grayscale" min="0" max="100" />
+        </div>
+        <div class="tools" id="tools6">
+          <p><i class="fa fa-sliders"></i> HUE</p>
+          <label for="Hue"></label>
+          <input type="range" id="Hue" min="0" max="100" />
+        </div>
+
+        <div class="tools" id="tools7">
+          <p><i class="fa fa-exchange"></i> INVERT</p>
+          <label for="invert"></label>
+          <input type="range" id="invert" min="0" max="100" />
+        </div>
+        <div class="tools" id="tools8">
+          <p><i class="fa fa-eye-slash"></i> OPACITY</p>
+          <label for="opacity"></label>
+          <input type="range" id="opacity" min="0" max="100" />
+        </div>
+        <div class="tools" id="tools9">
+          <p><i class="fa fa-film"></i> SEPIA</p>
+          <label for="sepia"></label>
+          <input type="range" id="sepia" min="0" max="100" />
+        </div>
+      </div>
+
+      <div class="textdiv" id="textdiv">
+        <div class="divi" id="div1">
+          <p>TEXT:</p>
+          <input type="text" style="display: block" id="name" />
+        </div>
+
+        <div class="divi" id="div2">
+          <p>MOVE X</p>
+          <label for="position_text_x"></label>
+          <input type="range" id="position_text_x" min="1" max="500" />
+        </div>
+
+        <div class="divi" id="div3">
+          <p>MOVE Y</p>
+          <label for="position_text_y"></label>
+          <input type="range" id="position_text_y" min="1" max="500" />
+        </div>
+
+        <div class="divi" id="div4">
+          <label for="font" style="display: block">FONT</label>
+          <input type="range" id="font" min="1" max="200" />
+        </div>
+
+        <div class="divi" id="div5">
+          <p>SELECT FONT TYPE:</p>
+          <label for="ffamily"></label>
+          <select id="ffamily">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Impact">Impact</option>
+            <option value="Lucida Console">Lucida Console</option>
+            <option value="Tahoma">Tahoma</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+          </select>
+        </div>
+
+        <div class="divi" id="div6">
+          <p>COLOUR</p>
+          <label for="color"></label>
+          <input type="color" id="color" />
+        </div>
+
+        <div class="divi" id="div7">
+          <button onclick="text()" style="display: block" id="btntext">
+            ADD TEXT
+          </button>
+        </div>
+      </div>
+
+      <div class="cropdiv" id="cropdiv">
+        <div class="c" id="crop">
+          <div class="x-crop" id="x-crop">
+            <label for="crop-x">BORDER</label>
+            <input type="range" id="crop-x" min="0" max="50" />
+          </div>
+          <!-- <div class="y-crop" >
+                    <label for="crop-y" id="y-crop">CROP-Y</label>
+                    <input type="range" id="crop-y" min="0" max="1000">
+                </div> -->
+        </div>
+
+        <!-- <div class="border">
+                <div class="bd" id="bd">
+                    <label for="canva-border">Border</label>
+                    <input type="range" id="canva-border" min="0" max="360">
+
+                </div>
+            </div> -->
+
+        <div class="c" id="flip">
+          <label for="flip-right">FLIP</label>
+          <input type="range" id="flip-right" min="0" max="360" />
+        </div>
+      </div>
+
+      <div class="img" id="img">
+        <canvas id="canvas" style="border: solid black 0px"></canvas>
+      </div>
+    </main>
+    <script src="index.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+  </body>
+</html>
